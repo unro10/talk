@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TalkTalk</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>TalkTalk</h1>
+  <nav>
+    <button onclick="showPage('postPage')">게시글</button>
+    <button onclick="showPage('chatPage')">채팅</button>
+  </nav>
+</header>
+
+<main>
+<section id="postPage" class="page active">
+<h2>게시글</h2>
+<textarea id="postInput" placeholder="게시글 작성"></textarea>
+<button onclick="addPost()">작성</button>
+<div id="postList"></div>
+</section>
+
+<section id="chatPage" class="page">
+<h2>채팅</h2>
+<div id="chatBox"></div>
+<input type="text" id="chatInput" placeholder="메시지 입력">
+<button onclick="sendMessage()">전송</button>
+</section>
+</main>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
