@@ -1,71 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-body {
-  background: #0f172a;
-  color: white;
-}
-
-header {
-  background: #1e293b;
-  padding: 20px;
-  text-align: center;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-button {
-  background: #3b82f6;
-  border: none;
-  padding: 10px;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
-}
-
-.page {
-  display: none;
-}
-
-.page.active {
-  display: block;
-}
-
-main {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-}
-
-input,
-textarea {
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-}
-
-#chatBox,
-#postList {
-  margin-top: 20px;
-  padding: 10px;
-  background: #1e293b;
-  border-radius: 10px;
-}
-
-.message,
-.post {
-  background: #334155;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 8px;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
+body{background:#0f172a;color:white;}
+header{background:#1e293b;padding:20px;text-align:center;}
+nav{display:flex;justify-content:center;gap:10px;margin-top:10px;}
+button{background:#3b82f6;border:none;padding:10px 15px;border-radius:8px;color:white;cursor:pointer;}
+.page{display:none;}
+.page.active{display:block;}
+main{max-width:800px;margin:auto;padding:20px;}
+input,textarea{width:100%;margin:10px 0;padding:10px;border-radius:8px;border:none;}
+#chatBox,#postList{margin-top:20px;padding:10px;background:#1e293b;border-radius:10px;}
+#chatBox{max-height:400px;overflow-y:auto;}
+.message,.post{background:#334155;margin:5px 0;padding:10px;border-radius:8px;}
